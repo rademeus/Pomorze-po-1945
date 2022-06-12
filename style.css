@@ -1,23 +1,37 @@
 body{
     background-image: url("img/tlo.png");
     margin: 0px; 
-    font-family: 'Courier New', Courier, monospace ;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 27px;
 }
 
 #logo{
     width: 100%;
     text-align: center;
-    background-color: rgb(187, 22, 22);
-    font-size: 70px;
-    padding: 5px 0px 5px 0px;
+    background-color:#fed517;
+    font-size: 80px;
+    padding: 5px 0px 15px 0px;
     letter-spacing: 5px;
     color:  black;
+    font-weight: 800;  
     text-shadow: 
-        7px 2px 0,
-        2px 2px 0,
-        2px -2px 0,
-        2px -2px 0;
+    5px 5px 0px rgba(0,0,0,0.3), 
+    0px 0px 0px rgba(255, 255, 255, 0.075);
 }
 
 #main_container{
@@ -25,20 +39,59 @@ body{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: white;
-    width: 1192px;
+    background-color: #fed517;
+    width: 1100px;
     padding: 20px;
-    border-top: 4px solid rgb(163, 4, 4);
-    border-left: 4px solid rgb(163, 4, 4);
-    border-right: 4px solid rgb(163, 4, 4);
-    border-bottom: 4px solid rgb(163, 4, 4);
- 
+    font-size: 40px;
 }
 
 #spis_tre{
-    width: 960px;
+    width: 1000px; 
+    padding-left: 100px;   
 }
 
 ol{
-    margin-top: 5px;
+    margin-top: 15px;
 }
+
+ol > li{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+
+ol > li > ul{
+    font-size: 25px;
+    text-transform: none;
+    font-weight: 200;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 30px;  
+}
+
+ol > li > ul > li{
+    margin: 0px;
+    letter-spacing: 2px;   
+}
+
+.slajd{
+    font-size: 20px;
+    padding: 25px 20px;
+}
+
+.icon-bookmark { content: "\e800"; }
+
+.scrollup{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 100px; 
+    bottom: 100px;
+    display: none;
+
+}
+
