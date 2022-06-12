@@ -2,31 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mój HTML odc 4</title>
-    <meta name="desription" content="nauka hgtml cd. Teaz odcinek nr 4"/>
-    <meta name="keywords" content="nauka, htmk i jakieś tam słowa kluczowe"/>
+    <meta name="desription" content="nauka html cd. Teaz odcinek nr 4"/>
+    <meta name="keywords" content="nauka, html i jakieś tam inne słowa kluczowe"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet"  href="css/fontello.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap" rel="stylesheet" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    
+    <script>
+
+        jQuery(function($)
+        {
+            //zresetuj scrolla
+            $.scrollTo(0);
+			$('#link1').click(function() {$.scrollTo($('#po_woj'), 1200); });
+			$('#link2').click(function() {$.scrollTo($('#od_bier'), 1200); });
+            $('#link3').click(function() {$.scrollTo($('#dek_gierka'), 1200); });
+            $('#link4').click(function() {$.scrollTo($('#lata80'), 1200); });
+            $('#link5').click(function() {$.scrollTo($('#transfor'), 1200); });
+			
+			$('.scrollup').click(function() {$.scrollTo($('body'), 1200); });
+        }  
+        );
+
+		//pokaż podczas przewijania
+
+			$(window).scroll(function(){
+				if($(this).scrollTop()>500) $('.scrollup').fadeIn();
+				else $('.scrollup').fadeOut();
+			}
+			);
+
+    </script>
 </head>
+    
 <body>
-    <div id="logo">Pomorze po 1945 r.</div>
+    <div id="logo">Kaszuby po 1945 r.</div>
      
-
     <div id="main_container">
+		
+		<a href="#" class="scrollup" title="Wróć do spisu treści"></a>
         
-        <div id="spis_tre">
-            <ol>
-                
-                <li>Temat 1
+        <div id="spis_tre"> 
+            <ol> 
+                <li>Historia Pomorza po 1945 r.
                     <ul>
-                        <li>Podtemat nr 1 Tematu 1</li>
-                        <li>Podtemat nr 2 Tematu 1</li>
-                        <li>Podtemat nr 3 Tematu 1</li>
-                        <li>Podtemat nr 4 Tematu 1</li>
-                        <li>Podtemat nr 5 Tematu 1</li>
+                        <li><a id="link1" href="#">Pierwsze lata po wojnie</a></li>
+                        <li><a id="link2" href="#">Od Bieruta do Gomułki</a></li>
+                        <li><a id="link3" href="#">Dekada Gierka na Pomorzu</a></li>
+                        <li><a id="link4" href="#">Lata '80</a></li>
+                        <li><a id="link5" href="#">Okres transformacji ustrojowej</a></li>
                     </ul>
                 </li>
                 <li>Temat 2
@@ -38,7 +69,7 @@
                         <li>Podtemat nr 5 Tematu 2</li>
                     </ul>
                 </li>
-                <li>Temat 3
+				<li>Temat 3
                     <ul>
                         <li>Podtemat nr 1 Tematu 3</li>
                         <li>Podtemat nr 2 Tematu 3</li>
@@ -47,25 +78,87 @@
                         <li>Podtemat nr 5 Tematu 3</li>
                     </ul>
                 </li>
-                <li>Temat 4
-                    <ul>
-                        <li>Podtemat nr 1 Tematu 4</li>
-                        <li>Podtemat nr 2 Tematu 4</li>
-                        <li>Podtemat nr 3 Tematu 4</li>
-                        <li>Podtemat nr 4 Tematu 4</li>
-                        <li>Podtemat nr 5 Tematu 4</li>
-                    </ul>
-                </li>
-                
             </ol>
-
-
-
         </div>
-     
-    </div> 
+       
+        
+								<!-- SLAJD 1.1  -->
+		<div class="slajd">
+		
+			<h1 id="po_woj">Pierwsze lata po wojnie</h1>
+			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, sit modi. Voluptatem amet, ut incidunt laboriosam, optio inventore quidem, voluptatum voluptatibus provident earum illum fuga harum quasi dolorem reprehenderit culpa.Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia, cum sapiente atque dolor nam impedit esse necessitatibus est quasi ipsa quam tempore ratione eaque consequatur expedita libero temporibus quia.
+			<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minima pariatur inventore commodi voluptates obcaecati in asperiores, soluta molestiae harum error odit, sit vitae culpa cupiditate quas quidem dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur blanditiis necessitatibus officia obcaecati, eum cumque nemo aliquam iusto iure? Commodi odio alias quasi, quod magni pariatur quidem iure optio?
+			<br><br>
+			
+			<div style="float:left; width:480px; padding-left:20px;">
+				<img src="img/chlopi.jpg" style="width: 450px; height: 450px;" alt="chłopi" />
+			</div>
+		
+			<div style="clear:both;"></div>
 
-  
+		</div>
+		
+		<!-- ######################## SLAJD 1.2 ######################## -->
+		
+		<div class="slajd">
+			<h1 id="od_bier">Od Bieruta do Gomułki</h1>
+			
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptates sint, quo doloribus accusamus accusantium non libero odio tempore dicta voluptas tenetur autem quibusdam nemo tempora! Architecto illo modi nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Snimi suscipit, officia vero voluptatibus,</strong> sapiente tempora quo non laboriosam ab vitae ullam consectetur ea fugiat id illo! Tenetur itaque nulla et!
+			<br><br>
+			<strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, odio eaque!</strong> Explicabo rerum delectus minima molestiae tempore corporis vero sint cum quasi aperiam aspernatur, eveniet, labore minus vel! Explicabo, repellat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus commodi odio eveniet numquam necessitatibus dolor inventore, impedit, recusandae a error odit! Possimus reiciendis, nihil molestiae sunt qui iusto reprehenderit quo.
+			<br><br>	
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veritatis laborum est sequi expedita eligendi soluta dolore ex accusamus corrupti. Provident autem, officiis minus aut commodi similique inventore doloremque esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis molestias nobis nostrum eveniet explicabo facere ducimus, labore dolorem cumque eius fuga reiciendis? Quod inventore obcaecati illo omnis, nisi ratione libero?
+			<br><br>		
+		</div>
+		
+		<!-- ######################## SLAJD 1.3 ######################## -->
+		
+		<div class="slajd">
+			<h1 id="dek_gierka">Dekata Gierka na Pomorzu</h1>
+			
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sint, architecto aliquam officia exercitationem nisi saepe ipsa velit commodi nulla deserunt tempora illo necessitatibus minima alias debitis facere labore repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ad repellat harum possimus expedita, excepturi ut numquam cupiditate. Hic repellendus ad odit accusamus rem facilis sit ex alias praesentium inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non, temporibus aliquam suscipit, neque incidunt amet eveniet qui nemo earum deserunt ipsam! Quis doloremque voluptatem saepe autem, iste dolor maxime!
+			<br><br>
+			
+			<div style="float:left; text-align:center; font-size:14px;">
+				<img src="img/wies.jpg"  style="width: 450px; height: 450px;" alt="wieś" />
+				<br />Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+			</div>
+			<div style="clear:both;"></div>	
+		</div>
+			
+		<!-- ######################## SLAJD 1.4 ######################## -->
+		
+		<div class="slajd">		
+			<h1 id="lata80">Lata '80</h1>
+			
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem pariatur sapiente sit, officiis fuga at nobis tempore. Quia unde animi odio recusandae esse libero, voluptates eaque repellat sunt quos!Loren
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolorem optio fuga tempore eligendi? Tempora facere explicabo aperiam ipsam, quo totam exercitationem natus expedita magnam, dolorum ducimus. Dolores, molestias asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur rerum iusto temporibus facere cum illum accusamus adipisci laudantium! Perferendis ab voluptatibus atque dignissimos numquam minima sed earum et sint.
+			<br><br>
+			
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis tenetur officia, quaerat, iure non minima eveniet, quos quis illo eos qui minus dignissimos ab neque repellendus. Voluptate, culpa vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, consectetur ducimus ipsum voluptas quod sed aperiam dolor rerum, eligendi ullam explicabo reprehenderit magnam tenetur. Necessitatibus porro voluptas aspernatur ad reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores molestiae error doloremque, voluptates voluptate rerum aliquam dolores consectetur rem iste ratione velit qui, architecto recusandae, totam accusantium at delectus.
+			<br><br>
+
+			<div style=" float:left; text-align:center; font-size:14px;">
+				<img src="img/autobus.jpg"  style="width: 550px; height: 600px;" alt="autobus, pasażerowie" />
+				<br/>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<!-- ######################## SLAJD 1.5 ######################## -->
+		
+		<div class="slajd">		
+			<h1 id="transfor">Okres transformacji ustrojowej</h1>
+			
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt dolorem repellat, accusamus repudiandae reiciendis ratione voluptas iure fugit! Blanditiis nostrum delectus officiis reprehenderit eos deleniti fugit odio corporis inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloribus rem dicta fuga, modi doloremque numquam perferendis sed unde ex labore pariatur consectetur quod velit, eius debitis eum magnam blanditiis.
+			<br><br>
+			Lorem ipsum dolor <strong>amet consectetur adipisicing elit. Exercitationem numquam</strong> , error delectus esse dolor nisi suscipit amet nihil quod accusantium id quo adipisci minima vitae ut at velit natus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas repudiandae veniam dolores? Quam voluptas eius nobis qui aperiam in placeat a magni nostrum. Praesentium, consequuntur id. Perferendis, aliquid totam!
+			<br><br>							
+		</div>
+	
+    </div> 
 
 </body>
 </html>
